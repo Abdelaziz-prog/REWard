@@ -1,4 +1,4 @@
-package com.example.reward.Screens
+package com.example.reward.ui.theme.Screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

@@ -1,8 +1,7 @@
+
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -10,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -26,35 +24,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Outline
-import androidx.compose.ui.graphics.Path
-import androidx.compose.ui.graphics.Shape
-import androidx.compose.ui.graphics.graphicsLayer
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.Density
-import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.reward.R
+import com.example.reward.data.Composables.reHeaderLogo
 
-class LoginHeaderShape : Shape {
-    override fun createOutline(
-        size: androidx.compose.ui.geometry.Size,
-        layoutDirection: LayoutDirection,
-        density: Density
-    ): Outline {
-        val path = Path().apply {
-            moveTo(0f, 0f)
-            lineTo(size.width, 0f)
-            lineTo(size.width, size.height * 0.4f) // نزول من اليمين
-            lineTo(size.width * 0.35f, size.height) // النقطة المنحدرة
-            lineTo(0f, size.height * 0.7f) // الرجوع للشمال
-            close()
-        }
-        return Outline.Generic(path)
-    }
-}
 
 @Composable
 fun LoginScreen() {
@@ -66,24 +40,7 @@ fun LoginScreen() {
             .verticalScroll(rememberScrollState()), // عشان لو الشاشة صغيرة تقدر تعمل سكرول
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // 1. الجزء العلوي (Header)
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(320.dp)
-                .graphicsLayer {
-                    shape = LoginHeaderShape()
-                    clip = true
-                }
-                .background(Color(0xFF134F49)),
-            contentAlignment = Alignment.Center
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.reward), // اسم الصورة عندك
-                contentDescription = "Logo",
-                modifier = Modifier.size(250.dp)
-            )
-        }
+         reHeaderLogo()
 
         Spacer(modifier = Modifier.height(20.dp))
 
