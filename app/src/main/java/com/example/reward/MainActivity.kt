@@ -11,6 +11,8 @@ import androidx.activity.enableEdgeToEdge
 import com.example.reward.data.Composables.homeHeader
 import com.example.reward.data.Composables.reHeader
 import com.example.reward.ui.theme.Screens.HomeScreen
+import com.example.reward.ui.theme.Screens.SignUpScreen
+import com.example.reward.ui.theme.Screens.editprofilescreen
 
 import org.osmdroid.config.Configuration
 
@@ -22,13 +24,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
           // LoginScreen()
-             // SignUpScreen()
+            //  SignUpScreen()
             // reHeaderLogo()
             // reHeader()
             // HomeHeader()
             // homeHeader()
            // HomeScreen()
-            MapScreen()
+           // MapScreen()
+           editprofilescreen()
         }
     }
 }
