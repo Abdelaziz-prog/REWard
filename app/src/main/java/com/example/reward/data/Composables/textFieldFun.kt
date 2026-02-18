@@ -11,7 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun textFieldFun (title : String){
+fun textFieldFun (title : String, modifier: Modifier= Modifier){
     TextField(
         value = "", // اربطها بـ State
         onValueChange = {},
