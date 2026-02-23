@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import com.example.reward.R
 
 @Composable
-fun reHeaderLogo(){
+fun reHeaderLogo(modifier: Modifier= Modifier){
     Box(
         modifier = Modifier
             .fillMaxWidth()

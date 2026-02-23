@@ -1,5 +1,6 @@
 package com.example.reward
 
+import ForgotPasswordScreen
 import LoginScreen
 import MapScreen
 
@@ -10,10 +11,13 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.example.reward.data.Composables.homeHeader
 import com.example.reward.data.Composables.reHeader
+
 import com.example.reward.ui.theme.Screens.HomeScreen
 
 import com.example.reward.ui.theme.Screens.SignUpScreen
 import com.example.reward.ui.theme.Screens.editprofilescreen
+import com.example.reward.ui.theme.Screens.locationscreen
+import com.example.reward.ui.theme.Screens.newpasswordscreen
 import com.example.reward.ui.theme.Screens.pickupscreen
 
 import org.osmdroid.config.Configuration
@@ -32,9 +36,13 @@ class MainActivity : ComponentActivity() {
             // HomeHeader()
             // homeHeader()
           // HomeScreen()
-           // MapScreen()
+           //MapScreen()
            //editprofilescreen()
-            pickupscreen()
+            //pickupscreen()
+          //  locationscreen()
+                //ForgotPasswordScreen()
+            newpasswordscreen()
         }
+
     }
 }
