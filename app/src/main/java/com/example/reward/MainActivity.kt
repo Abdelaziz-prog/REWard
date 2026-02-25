@@ -13,9 +13,11 @@ import com.example.reward.data.Composables.homeHeader
 import com.example.reward.data.Composables.reHeader
 
 import com.example.reward.ui.theme.Screens.HomeScreen
+import com.example.reward.ui.theme.Screens.NotificationScreen
 import com.example.reward.ui.theme.Screens.RankingScreen
 
 import com.example.reward.ui.theme.Screens.SignUpScreen
+import com.example.reward.ui.theme.Screens.VerifyScreen
 import com.example.reward.ui.theme.Screens.editprofilescreen
 import com.example.reward.ui.theme.Screens.locationscreen
 import com.example.reward.ui.theme.Screens.newpasswordscreen
@@ -36,14 +38,16 @@ class MainActivity : ComponentActivity() {
             // reHeader()
             // HomeHeader()
             // homeHeader()
-          // HomeScreen()
-           //MapScreen()
-           //editprofilescreen()
-            //pickupscreen()
-          //  locationscreen()
+           // HomeScreen()
+           // MapScreen()
+           // editprofilescreen()
+            // pickupscreen()
+             // locationscreen()
                 //ForgotPasswordScreen()
            // newpasswordscreen()
-            // RankingScreen()
+             // RankingScreen()
+            // NotificationScreen()
+             VerifyScreen()
 
         }
 
