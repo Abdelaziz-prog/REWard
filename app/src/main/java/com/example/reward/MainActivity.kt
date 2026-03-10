@@ -11,6 +11,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.example.reward.data.Composables.homeHeader
 import com.example.reward.data.Composables.reHeader
+import com.example.reward.ui.theme.Screens.Dealsandpromotions
 
 import com.example.reward.ui.theme.Screens.HomeScreen
 
@@ -30,20 +31,21 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-          // LoginScreen()
-            // SignUpScreen()
+          //LoginScreen()
+            //SignUpScreen()
             // reHeaderLogo()
             // reHeader()
             // HomeHeader()
             // homeHeader()
           // HomeScreen()
            //MapScreen()
-           //editprofilescreen()
+          // editprofilescreen()
             //pickupscreen()
-          //  locationscreen()
-                //ForgotPasswordScreen()
-         //   newpasswordscreen()
-            qrscreen()
+          //locationscreen()
+               // ForgotPasswordScreen()
+         // newpasswordscreen()
+           // qrscreen()
+       // Dealsandpromotions()
         }
 
     }
