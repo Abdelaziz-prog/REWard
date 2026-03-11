@@ -19,6 +19,7 @@ import com.example.reward.ui.theme.Screens.editprofilescreen
 import com.example.reward.ui.theme.Screens.locationscreen
 import com.example.reward.ui.theme.Screens.newpasswordscreen
 import com.example.reward.ui.theme.Screens.pickupscreen
+import com.example.reward.ui.theme.Screens.qrscreen
 
 import org.osmdroid.config.Configuration
 
@@ -41,7 +42,8 @@ class MainActivity : ComponentActivity() {
             //pickupscreen()
           //  locationscreen()
                 //ForgotPasswordScreen()
-            newpasswordscreen()
+           // newpasswordscreen()
+            qrscreen()
         }
 
     }
