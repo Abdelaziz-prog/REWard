@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         Configuration.getInstance().load(this, getSharedPreferences("osm", MODE_PRIVATE))
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+         enableEdgeToEdge()
         setContent {
           // LoginScreen()
             // SignUpScreen()
@@ -45,7 +45,7 @@ class MainActivity : ComponentActivity() {
              // locationscreen()
                 //ForgotPasswordScreen()
            // newpasswordscreen()
-             // RankingScreen()
+              // RankingScreen()
             // NotificationScreen()
              VerifyScreen()
 
