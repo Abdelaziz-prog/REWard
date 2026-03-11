@@ -13,7 +13,6 @@ import com.example.reward.data.Composables.homeHeader
 import com.example.reward.data.Composables.reHeader
 
 import com.example.reward.ui.theme.Screens.HomeScreen
-import com.example.reward.ui.theme.Screens.RankingScreen
 
 import com.example.reward.ui.theme.Screens.SignUpScreen
 import com.example.reward.ui.theme.Screens.editprofilescreen
@@ -42,9 +41,7 @@ class MainActivity : ComponentActivity() {
             //pickupscreen()
           //  locationscreen()
                 //ForgotPasswordScreen()
-           // newpasswordscreen()
-            // RankingScreen()
-
+            newpasswordscreen()
         }
 
     }
